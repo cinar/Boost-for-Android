@@ -173,7 +173,7 @@ case "$HOST_OS" in
         Platfrom=darwin-x86
         ;;
     windows|cygwin)
-        Platfrom=windows-x86
+        Platfrom=windows
         ;;
     *)  # let's play safe here
         Platfrom=linux-x86
