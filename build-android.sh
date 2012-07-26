@@ -316,7 +316,7 @@ echo "# ---------------"
 # Build boost for android
 echo "Building boost for android"
 cd $BOOST_DIR
-env PATH=`dirname $CXXPATH`:$PATH \
+env PATH="$(dirname $CXXPATH):$PATH" \
  AndroidNDKRoot=$AndroidNDKRoot NO_BZIP2=1 \
  ./bjam toolset=$TOOLSET -q \
  cxxflags="$CXXFLAGS" \
